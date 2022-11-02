@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap');  /* Importing font-type */
+
+
+
+/* Setting background image */
+html{
+    background-image: url("./assets/HomePage.jpg");
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+
+/* aligning the play-button */
+body{
+    height: 650px;
+    font-weight: bold;
+    /* background-color: white; */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: aliceblue;
+}
+#game-holder{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+
+
+/* Styling the nav-bar */
+#nav-bar{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+}
+
+
+
+
+/* Name Container styling */
+#Name-container{
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+}
+#game-logo-container
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+/* Styling input part of the page */
+input{
+    height: 25px;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 2px black solid;
+    font-weight: bolder;
+    color: white;
+}
+.demo{
+    height: 25px;
+    width: 25px;
+}
+.name{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 5px;
+    text-align: right;
+    vertical-align: middle;
+}
+
+
+a{
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+
+
+/*to make Play-button grow on hover. */
+#button-play, a{
+    transition: all.2s ease-in-out;
+}
+#button-play:hover, a:hover{
+    transform: scale(1.1);
+}
+/* instructions pannel */
+#instruction-box{
+    height: 550px;
+    width: 450px;
+    background-color: rgb(255, 255, 255, 0.5);
+    margin-left: 50px;
+    border-radius: 30px;
+    margin-top: 50px;
+}
