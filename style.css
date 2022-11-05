@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap');  /* Importing font-type */
-
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');        /* Importing font-type */
 
 
 /* Setting background image */
@@ -62,15 +62,41 @@ body{
 
 
 
+#container{
+    display: flex;
+    justify-content: space-evenly;
+}
+#logo-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#input-holder{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    top: 150px;
+}
+#game-logo{
+    margin-top: -180px;
+}
+
+
+
+
 
 /* Styling input part of the page */
 input{
-    height: 25px;
+    height: 30px;
     width: 250px;
     background-color: rgba(255, 255, 255, 0.4);
     border: 2px black solid;
     font-weight: bolder;
     color: white;
+    font-size: large;
 }
 .demo{
     height: 25px;
@@ -86,26 +112,31 @@ input{
 }
 
 
-a{
-    margin-right: 20px;
-    margin-top: 20px;
-}
-
-
 
 /*to make Play-button grow on hover. */
-#button-play, a{
+#play-button{
+    position: relative;
+    top: 60px;
     transition: all.2s ease-in-out;
 }
-#button-play:hover, a:hover{
+#play-button:hover{
     transform: scale(1.1);
 }
+
+
+
 /* instructions pannel */
 #instruction-box{
-    height: 550px;
+    position: relative;
+    top: 150px;
+    height: 500px;
     width: 450px;
-    background-color: rgb(255, 255, 255, 0.5);
-    margin-left: 50px;
+    background-color: rgb(255, 255, 255, 0.9);
     border-radius: 30px;
     margin-top: 50px;
+    color: darkcyan;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Fredericka the Great', cursive;
 }

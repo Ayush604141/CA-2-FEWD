@@ -8,19 +8,35 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div>
-        <div>
-            <img src="" alt="">
-            <img src="" alt="">
+    <div id="container">
+        <div id="instruction-box">
+            <h1>Instructions</h1>
+            <div>
+                You have to guess the <br> hidden word <br>
+                3 of your Mistakes are accepted but after that, the game terminates. <br><br>
+                Use UPPERCASE to fill the answer fields.
+                To start the game, <br> just enter any word based on the hint given. <br><br> For example: <br>
+                <h3>T A B L E</h3>
+                Letter in <span>🟢</span> is in the word <br> and in the correct spot. <br>
+                Letter left uncolored are not in the word.
+
+            </div>
         </div>
-        <div>
-            <input type="text" id="name" placeholder="YOUR NAME">
-            <input type="text" id="nickname" placeholder="YOUR NICK NAME">
-            <img src="" alt="">
+        <div id="logo-button">
+            <img id="game-logo" src="./assets/Wordle.png" height="600px" alt="Game-logo">
+            <img id="play-button" src="./assets/Play-button.png" height="250px" alt="Play-button">
+        </div>
+        <div id="input-holder">
+            <div>
+                <h1>Your Name: </h1>
+                <input type="text" required id="name" placeholder="YOUR NAME">
+            </div>
+            <div>
+                <h1>Your Nickname: </h1>
+                <input type="text" required id="nickname" placeholder="YOUR NICK NAME">
+            </div>
         </div>
 
-    </div>
-    <div id="instruction-box">
 
     </div>
     <script src="./app.js"></script>

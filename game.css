@@ -1,32 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap');  /* Importing font-type */
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');   /* Importing font-type */
 
-html{
-    background-image: url("./assets/Game\ Page.jpg");
+
+
+body{
+    background-image: url("./assets/Bg-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+
+
+/* <--------------------------------------------------------------------------------------------------------------------------------> */
+/* Styling the Play-area */
 #container{
     margin: 50px;
     height: 650px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 .Flex-container{
-    width: 600px;
+    width: 500px;
     display: flex;
     justify-content: space-between;
 }
 .letter-holder{
-    border: 4px solid white;
     height: 70px;
     width: 70px;
     background-color: rgba(255, 255, 255, 0.5);
-    color: whitesmoke;
+    color: black;
     font-size: xx-large;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Fredericka the Great', cursive;
     font-weight: bolder;
 }
 .text-center{
@@ -35,27 +41,49 @@ html{
     align-items: center;
     text-align: center;
 }
-
 #hint-container{
-    align-self: center;
-    margin-left: 10px;
-    width: 900px;
-    height: 75px;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-#button-click{
-    margin-top: 20px;
-    cursor: pointer;
-}
-
-#score-container{
-    background-color: rgba(255, 255, 255, 0.5);
-    height: 50px;
-    width: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 150px;
+    width: 600px;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Fredericka the Great', cursive;
 }
+.Flex{
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 75px;
+    width: 225px;
+    color: black;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'Fredericka the Great', cursive;
+}
+.Flex h1{
+    position: relative;
+    bottom: 25px;
+}
+
+
+
+/* <--------------------------------------------------------------------------------------------------------------------------------> */
+/* Styling buttons */
+#buttons{
+    height: 40px;
+    width: 150px;
+    border-radius: 75px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    background-color: lightskyblue;
+    transition: all .2s ease-in-out;
+}
+#buttons:hover{
+    transform: scale(1.5); 
+}
+

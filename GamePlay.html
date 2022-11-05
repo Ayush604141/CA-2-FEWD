@@ -8,38 +8,22 @@
     <link rel="stylesheet" href="./game.css">
 </head>
 <body>
-
     <div id="container">
         <div id="hint-container">
-        
+            Hint will be displayed here
         </div>
             <div class="Flex-container" id="chance01">
-                <input class="letter-holder text-center" maxlength="1" style="text-transform: uppercase" id="number1">
-                <input class="letter-holder text-center" maxlength="1" style="text-transform: uppercase" id="number2">
-                <input class="letter-holder text-center" maxlength="1" style="text-transform: uppercase" id="number3">
-                <input class="letter-holder text-center" maxlength="1" style="text-transform: uppercase" id="number4">
-                <input class="letter-holder text-center" maxlength="1" style="text-transform: uppercase" id="number5">
+                <input class="letter-holder text-center 1" maxlength="1" id="number1">
+                <input class="letter-holder text-center 1" maxlength="1" id="number2">
+                <input class="letter-holder text-center 1" maxlength="1" id="number3">
+                <input class="letter-holder text-center 1" maxlength="1" id="number4">
+                <input class="letter-holder text-center 1" maxlength="1" id="number5">
             </div>
-            <div class="Flex-container" id="chance02">
-                <input class="letter-holder text-center" maxlength="1" style="text-transform: uppercase" id="number6">
-                <input class="letter-holder text-center" maxlength="1" style="text-transform: uppercase" id="number7">
-                <input class="letter-holder text-center" maxlength="1" style="text-transform: uppercase" id="number8">
-                <input class="letter-holder text-center" maxlength="1" style="text-transform: uppercase" id="number9">
-                <input class="letter-holder text-center" maxlength="1" style="text-transform: uppercase" id="number10">
+            <div class="Flex">
+                <h1> Tries: <span id="tries">5</span> </h1>
             </div>
-            <div class="Flex-container" id="chance03">
-                <input class="letter-holder text-center" maxlength="1" style="text-transform: uppercase" id="number11">
-                <input class="letter-holder text-center" maxlength="1" style="text-transform: uppercase" id="number12">
-                <input class="letter-holder text-center" maxlength="1" style="text-transform: uppercase" id="number13">
-                <input class="letter-holder text-center" maxlength="1" style="text-transform: uppercase" id="number14">
-                <input class="letter-holder text-center" maxlength="1" style="text-transform: uppercase" id="number15">
-            </div>
-            <h1 id="button-click"><span>✅</span></h1>
-
             <div>
-                <div id="score-container">
-                    <h1>Score: <span id="score">0</span></h1>
-                </div>
+                <button id="buttons">CHECK</button>
             </div>
     </div>
     <script src="./game.js"></script>
