@@ -10,7 +10,10 @@ var space5 = document.getElementById("number5");
 Button.onclick = SpaceCheck;
 
 var audio = new Audio("./assets/music/Game Page.mp3")
-window.onload = audio.play();
+function Play2(){
+    audio.play();
+}
+Play2();
 
 
 
