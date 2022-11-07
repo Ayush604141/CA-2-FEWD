@@ -7,7 +7,7 @@ var audio = new Audio("./assets/music/FrontPage.mp3")
 function Play(){
     audio.play();
 }
-Play();
+window.onload = Play;
 function PlayNow(){
     Name = document.getElementById("name").value;
     NickName = document.getElementById("nickname").value;
