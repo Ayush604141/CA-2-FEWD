@@ -1,23 +1,13 @@
-const message = document.getElementById("message")
-var score = document.getElementById("score")
-const replayButton = document.getElementById("replay")
-var audio = new Audio("./assets/music/EndPage.mp3")
-End_game = localStorage.getItem("Name");
-audio.play();
-var Score_update = localStorage.getItem("Score")
-var Word_lost = localStorage.getItem("Word")
-if(Score_update >= 100)
-{
-    message.innerText = "You Played Well";
-}
-else{
-    message.innerText = "Sorry Pal, You didn't guess", Word_lost
-}
+const game = document.getElementById("playAgain")
+const Score_now = document.getElementById("score")
+const Ranmdom_display = document.getElementById("gameOver")
+var New_Score = localStorage.getItem("Score");
+Score_now.innerText = New_Score;
+game.onclick = playAgain;
 
-score.innerText = End_game ,", You Scored", Score_update;
+var End_audio = new Audio("musicclosing.mp3")
+window.onload = End_audio.play();
 
-replayButton.onclick = replay;
-
-function replay(){
-    window.location.assign("index.html");
+function playAgain(){
+    window.location.assign("homepage.html")
 }
